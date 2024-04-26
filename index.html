@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainWaves - Reddit-like Social Media</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="dark-header">
+        <div class="container">
+            <div class="logo">BrainWaves</div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Messages</a></li>
+                    <li><a href="#">Notifications</a></li>
+                    <li><a href="CreatePost.html">Create Post</a></li> <!-- Link to the new post creation page -->
+                    <li class="dropdown">
+                        <a href="#">Profile <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu profile-dropdown">
+                            <li><a href="login.html">Sign In</a></li>
+                            <li><a href="#">Edit Profile</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </nav>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <ul class="search-results"></ul>
+            </div>
+        </div>
+    </header>
+    
+
+    <section class="hero-section">
+        <!-- Existing hero section content -->
+        <div class="container">
+            <h1>Discover and Share Your Favorite Content</h1>
+            <p>Join our vibrant community to explore, discuss, and engage with millions of users worldwide.</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <!-- Existing features section content -->
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="feature">
+                <i class="fas fa-users"></i>
+                <h3>Community Creation</h3>
+                <p>Create your own communities based on your interests and passions.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-comments"></i>
+                <h3>Discussion Threads</h3>
+                <p>Engage in meaningful discussions with like-minded individuals.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-thumbs-up"></i>
+                <h3>Voting</h3>
+                <p>Vote on content to surface the best and most relevant posts.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="community-showcase">
+        <!-- Existing community showcase section content -->
+        <div class="container">
+            <h2>Popular Communities</h2>
+            <div class="community" onmouseover="showOverlay(this)" onmouseout="hideOverlay(this)">
+                <img src="../community1.jpg" alt="Photography">
+                <div class="overlay">
+                    <h3>Photography</h3>
+                    <p>Join and discuss your latest clicks.</p>
+                </div>
+            </div>
+            <div class="community" onmouseover="showOverlay(this)" onmouseout="hideOverlay(this)">
+                <img src="../community2.jpg" alt="Art">
+                <div class="overlay">
+                    <h3>Art</h3>
+                    <p>Post, discuss and collaborate.</p>
+                </div>
+            </div>
+            <div class="community" onmouseover="showOverlay(this)" onmouseout="hideOverlay(this)">
+                <img src="../community3.jpg" alt="Cricket">
+                <div class="overlay">
+                    <h3>Cricket</h3>
+                    <p>Join and discuss everything cricket.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Existing footer content -->
+        <div class="container">
+            <p>&copy; 2024 BrainWaves. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

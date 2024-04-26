@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - BrainWaves</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="dark-header">
+        <!-- Header content -->
+        <!-- Add navigation links for different communities -->
+        <nav>
+            <ul>
+                <li><a href="#">Posts</a></li> <!-- Updated Home button -->
+                <li class="dropdown">
+                    <a href="#">Explore <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Communities</a></li>
+                        <li><a href="#">Trending</a></li>
+                        <li><a href="#">Topics</a></li>
+                    </ul>
+                </li>
+                <li><div class="icon-container"><i class="fas fa-envelope"></i></div></li> <!-- Icon for Messages -->
+                <li><div class="icon-container"><i class="fas fa-bell"></i></div></li> <!-- Icon for Notifications -->
+                <li class="dropdown">
+                    <a href="#">Profile <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu profile-dropdown">
+                        <li><a href="login.html">Sign In</a></li> <!-- Link to login page -->
+                        <li><a href="#">Edit Profile</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- Search bar and other header content -->
+    </header>
+
+    <section class="login-section">
+        <div class="container">
+            <h2>Sign In</h2>
+            <form>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="cta-button">Login</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Existing footer content -->
+        <div class="container">
+            <p>&copy; 2024 BrainWaves. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - BrainWaves</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="dark-header">
+        <div class="container">
+            <div class="logo">BrainWaves</div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li> <!-- Link to the home page -->
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Messages</a></li>
+                    <li><a href="#">Notifications</a></li>
+                    <li class="dropdown">
+                        <a href="#">Profile <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu profile-dropdown">
+                            <li><a href="login.html">Sign In</a></li>
+                            <li><a href="#">Edit Profile</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <ul class="search-results"></ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="post-list">
+        <div class="container">
+            <h2>Recent Posts</h2>
+            <div id="postList">
+                <!-- Posts will be dynamically added here -->
+                <!-- Example post structure: -->
+                <!--
+                <div class="post">
+                    <h3>Title</h3>
+                    <p>Content</p>
+                </div>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 BrainWaves. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Fetch and display posts
+        // Add your JavaScript code here to fetch posts and populate the #postList container
+    </script>
+</body>
+</html>

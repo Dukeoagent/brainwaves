@@ -1,0 +1,337 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e; /* Dark background color */
+    color: #ffffff; /* White text color */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.dark-header {
+    background-color: #153448; /* Dark blue header background */
+    padding: 10px 0;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffffff; /* White logo text color */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* White nav text color */
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #cccccc; /* Light grey hover color */
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #333333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown-menu li {
+    display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    color: #ffffff; /* White dropdown text color */
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #444444; /* Darker background color on hover */
+}
+
+.search-bar {
+    position: relative;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #ffffff; /* White search text color */
+}
+
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #333333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 0;
+    margin-top: 5px;
+    list-style-type: none;
+}
+
+.search-results li {
+    padding: 10px;
+    border-bottom: 1px solid #666666;
+    color: #ffffff; /* White search results text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-results li:hover {
+    background-color: #444444; /* Darker background color on hover */
+}
+
+/* Icon Styles */
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+.icon-container i {
+    color: #ffffff; /* White icon color */
+    font-size: 20px;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    background-color: #3c5b6f; /* Dark blue hero background color */
+    color: #ffffff; /* White text color */
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #153448; /* Dark blue button background color */
+    color: #ffffff; /* White button text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e64200; /* Dark orange button background color on hover */
+}
+
+/* Features Section Styles */
+.features-section {
+    background-color: #948979; /* Dark green background color */
+    color: #ffffff; /* White text color */
+    padding: 100px 0;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.features-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.feature {
+    margin-bottom: 40px;
+}
+
+.feature i {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+}
+
+/* Community Showcase Styles */
+.community-showcase {
+    background-color: #dfd0b8; /* Light brown background color */
+    color: #ffffff; /* White text color */
+    padding: 100px 0;
+    text-align: center;
+}
+
+.community-showcase h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.community {
+    position: relative;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.community img {
+    width: 250px;
+    height: 150px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.community:hover img {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff; /* White text color */
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.community:hover .overlay {
+    display: flex;
+    opacity: 1;
+}
+
+.overlay h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 16px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1a1a1a; /* Dark gray background color */
+    color: #ffffff; /* White text color */
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 20px;
+}
+
+footer nav ul {
+    justify-content: center;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* White footer link color */
+    transition: color 0.3s ease;
+}
+
+footer nav ul li a:hover {
+    color: #cccccc; /* Light grey footer link color on hover */
+}
+
+/* Add styling for the post creation section */
+.post-creation {
+    background-color: #3c5b6f; /* Dark blue background color */
+    color: #ffffff; /* White text color */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.post-creation h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.post-creation form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.post-creation .form-group {
+    margin-bottom: 20px;
+}
+
+.post-creation label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.post-creation input[type="text"],
+.post-creation textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff; /* White input background color */
+    color: #000000; /* Black text color */
+    font-size: 16px;
+    resize: vertical;
+}
+
+.post-creation button {
+    padding: 10px 30px;
+    background-color: #153448; /* Dark blue button background color */
+    color: #ffffff; /* White button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.post-creation button:hover {
+    background-color: #e64200; /* Dark orange button background color on hover */
+}

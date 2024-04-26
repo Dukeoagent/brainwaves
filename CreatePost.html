@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post - BrainWaves</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="dark-header">
+        <div class="container">
+            <div class="logo">BrainWaves</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Messages</a></li>
+                    <li><a href="#">Notifications</a></li>
+                    <li class="dropdown">
+                        <a href="#">Profile <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu profile-dropdown">
+                            <li><a href="login.html">Sign In</a></li>
+                            <li><a href="#">Edit Profile</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <ul class="search-results"></ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="post-creation">
+        <div class="container">
+            <h2>Create a New Post</h2>
+            <form id="postForm">
+                <div class="form-group">
+                    <label for="postTitle">Title</label>
+                    <input type="text" id="postTitle" name="postTitle" required>
+                </div>
+                <div class="form-group">
+                    <label for="postContent">Content</label>
+                    <textarea id="postContent" name="postContent" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Post</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 BrainWaves. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
